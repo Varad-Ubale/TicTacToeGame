@@ -1,0 +1,34 @@
+<!-- File: app/src/main/res/values-night/themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+      Base application theme for DARK mode.
+      This style will be automatically applied when the phone is in dark mode.
+      It inherits from the same DayNight theme, so the structure is consistent.
+    -->
+    <style name="Base.Theme.TicTacToeGameApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Dark theme color palette -->
+        <item name="colorPrimary">#5C6BC0</item> <!-- Softer blue for Player 1 in dark mode -->
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryVariant">#3F51B5</item>
+
+        <item name="colorSecondary">#E57373</item> <!-- Softer red for Player 2 in dark mode -->
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryVariant">#EF5350</item>
+
+        <item name="colorAccent">#FFCA28</item> <!-- Yellow for highlighting winning moves -->
+
+        <!-- Background and Surface colors for the dark theme -->
+        <item name="android:colorBackground">#121212</item> <!-- Standard dark background -->
+        <item name="backgroundColor">#121212</item>
+        <item name="colorOnBackground">#FFFFFF</item> <!-- White text -->
+
+        <item name="colorSurface">#1E1E1E</item> <!-- Lighter grey for cards and buttons -->
+        <item name="colorOnSurface">#FFFFFF</item> <!-- White text on surfaces -->
+    </style>
+
+    <color name="textColorDefault">#FFFFFF</color> <!-- White text for the board -->
+    <color name="textColorAccent">#FFCA28</color> <!-- Yellow for the winning line -->
+
+    <!-- The final theme for the app, inheriting from our base theme -->
+    <style name="Theme.TicTacToeGameApp" parent="Base.Theme.TicTacToeGameApp" />
+</resources>

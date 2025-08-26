@@ -1,0 +1,35 @@
+<!-- File: app/src/main/res/values/themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+      Base application theme for LIGHT mode.
+      The parent theme is changed to Theme.MaterialComponents.DayNight.NoActionBar.
+      This is a highly compatible theme that supports both light and dark modes and resolves the error.
+    -->
+    <style name="Base.Theme.TicTacToeGameApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Light theme color palette -->
+        <item name="colorPrimary">#2196F3</item> <!-- Blue for Player 1 -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White text on primary color -->
+        <item name="colorPrimaryVariant">#1976D2</item> <!-- Darker blue -->
+
+        <item name="colorSecondary">#F44336</item> <!-- Red for Player 2 -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- White text on secondary color -->
+        <item name="colorSecondaryVariant">#D32F2F</item> <!-- Darker red -->
+
+        <!-- Note: colorAccent is used by older components. For Material Components, colorSecondary is often used for accents. -->
+        <item name="colorAccent">#FF9800</item> <!-- Orange for highlighting winning moves -->
+
+        <!-- Background and Surface colors for the light theme -->
+        <item name="android:colorBackground">#F5F5F5</item> <!-- Light grey for the main background -->
+        <item name="backgroundColor">#F5F5F5</item> <!-- Custom attribute for the main background -->
+        <item name="colorOnBackground">#000000</item> <!-- Black text on the light background -->
+
+        <item name="colorSurface">#FFFFFF</item> <!-- White for card backgrounds and buttons -->
+        <item name="colorOnSurface">#000000</item> <!-- Black text on surfaces -->
+    </style>
+
+    <color name="textColorDefault">#000000</color> <!-- Black text for the board -->
+    <color name="textColorAccent">#FF9800</color> <!-- Orange for the winning line -->
+
+    <!-- The final theme for the app, inheriting from our base theme -->
+    <style name="Theme.TicTacToeGameApp" parent="Base.Theme.TicTacToeGameApp" />
+</resources>
